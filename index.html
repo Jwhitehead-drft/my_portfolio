@@ -1,73 +1,229 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./Assets/css/style.css">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html">Jacob Whitehead</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> 
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="./contact.html">Contact <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./portfolio.html">Portfolio</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- This div starts main block -->
-    <section>
-      <!-- This is the first row -->
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12"></div>
-             <h1>About Me</h1>
-        </div>
-      </div>
-      <!-- This is the second row -->
-      <div class="container">
-        <div class="row" >
-          <div class="col-md-4">
-             <p><img src="./Assets/Images/photo_2020-12-14_20-51-09.png" alt="Me!" style="width:200px;height:200px;"></p>
-          </div>
-          <div class="col-md-5"">
-             <p>Hey there! My name is Jacob Whitehead. I am a web developer with passion for gaming, music, and automotive. When I'm not trying to create, you can find me flying my drone or playing with my dogs!</p>
-          </div>
-        </div>
-      </div>
-      <!-- This is the third row -->
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <p>Currently working with HTML, CSS, and Javascript. Looking to expand into PHP, Python, Ruby. Strong desire to work within the IoT!</p>
-            <p><li class="link">
-              <a class="link" href="https://github.com/Jwhitehead-drft">Github</a>
-            </li></p>
-            <p><li class="link">
-              <a class="link" href="https://www.linkedin.com/in/jacob-whitehead-developer/">LinkedIn</a>
-            </li></p>
-          </div>
-        </div>
-      </div>
-      
-    </section>  
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>[Jacob Whitehead]</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<!--================ Start Home Banner Area =================-->
+	<section class="home_banner_area">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<div class="banner_content">
+							<h3 class="text-uppercase">Hello</h3>
+							<h1 class="text-uppercase">I Am Jacob Whitehead</h1>
+							<h5 class="text-uppercase">Web Developer</h5>
+							<div class="d-flex align-items-center">
+								<a class="primary_btn" href="mailto:jakeresides@gmail.com" target="_blank"><span>Hire Me</span></a>
+								<a class="primary_btn tr-bg" href="#" target="_blank"><span>Resume</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="home_right_img">
+							<img class="" src="img/banner/home-right.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Home Banner Area =================-->
+
+	<!--================ Start About Area =================-->
+	<section class="about_area">
+		<div class="container">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-lg-5">
+					<div class="about_img">
+						<img class="" src="img/projects/about-us.png" alt="">
+					</div>
+				</div>
+
+				<div class="offset-lg-1 col-lg-5">
+					<div class="main_title text-left">
+						<h2>Fitness Tracker</h2>
+						<p>
+							This app was developed with the intention of giving users a direct, relatable correlation with a given meal, to its caloric equivalent exercise. The team utilized a Body Mass Index API, as well as a Recipe API for CRUD to create the calculated output. This was everyone in the team's first project, and had to learn to manage limited API calls, among other challenges. We held standups daily, as well as peer code reviews.  
+						</p>
+						<p>
+							<strong>HTML,</strong>
+							<strong>CSS,</strong>
+							<strong>Javascript,</strong>
+							<strong>Node</strong>
+						</p>
+						
+						<a class="primary_btn" href="https://v1zconde.github.io/The_Guilty_One" target="_blank"><span>Visit</span></a> <a class="primary_btn tr-bg" href="https://github.com/v1zconde/The_Guilty_One" target="_blank"><span>Github</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about_area">
+		<div class="container">
+			<div class="row justify-content-start align-items-center">
+
+				<div class="col-lg-5">
+					<div class="main_title text-left">
+						<h2>Build-A-Date</h2>
+						<p>
+							Many people have a hard time deciding what they would like to do with their significant others for dates! This project was centered around an application that allows you to build a date that is specific to your taste and preferences, and saves that data so that you can have access to it whenever you want! It takes away the difficult parts of planning! Enjoy building your date!
+						</p>
+						<p>
+							<strong>Javascript,</strong>
+							<strong>SQL,</strong>
+							<strong>HandleBars,</strong>
+							<strong>Node</strong>
+						</p>
+						
+						<a class="primary_btn" href="https://vast-gorge-65423.herokuapp.com/" target="_blank"><span>Visit</span></a> <a class="primary_btn tr-bg" href="https://github.com/jmasone15/build-a-date.git" target="_blank"><span>Github</span></a>
+
+					</div>
+				</div>
+
+				<div class="offset-lg-2 col-lg-5">
+					<div class="about_img">
+						<img class="" src="img/projects/about-us.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about_area section_gap_bottom">
+		<div class="container">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-lg-5">
+					<div class="about_img">
+						<img class="" src="img/projects/about-us.png" alt="">
+					</div>
+				</div>
+
+				<div class="offset-lg-1 col-lg-5">
+					<div class="main_title text-left">
+						<h2>Bright Ideas Jewelery</h2>
+						<p>
+							My final project for the UCF bootcamp was personal goal of mine to develop an ecommerce website with the MERN stack. The website's end user requires ease of use over alternative options, such as Etsy or social media. A goal of the project was for the inventory to be easily managed by the business owner. My teammate and I had one week of exposure to React before starting this project, we overcame these challenges with stand ups, code reviews, and careful management of responsibilities.
+						</p>
+						<p>
+							<strong>Javascript,</strong>
+							<strong>React,</strong>
+							<strong>MongoDB,</strong>
+							<strong>Express,</strong>
+							<strong>Node,</strong>
+						</p>
+						
+						<a class="primary_btn" href="#" target="_blank"><span>Visit</span></a> <a class="primary_btn tr-bg" href="https://github.com/codehawkeye/Bright-Idea-Jewelers" target="_blank"><span>Github</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End About Us Area =================-->
+
+	<!--================ Start Technologies Area =================-->
+	<section>
+		<div class="container">
+				<div class="main_title text-left">
+						<h2>What do I do?</h2>
+				</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-12">
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-sm-3">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/javascript.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/reactredux.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/nodejs.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/uxui.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Brand Area =================-->
+
+	<!--================ Start Features Area =================-->
+	<section class="features_area">
+		<div class="container">
+			<div class="row feature_inner">
+				<div class="col-lg-6 col-md-6">
+					<div class="feature_item">
+						<img src="img/services/s1.ico" alt="">
+						<h4>Software</h4>
+						<p>Builds efficient and scalable software with any purpose</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<div class="feature_item">
+						<img src="img/services/s2.ico" alt="">
+						<h4>UI/UX Design</h4>
+						<p>Designs beautiful software using modern user experience methodology</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!--================ End Features Area =================-->
+
+	<!--================Footer Area =================-->
+	<footer class="footer_area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-12">
+					<div class="footer_top flex-column">
+						<div class="footer_logo">
+							<h4>Have a good day!</h4>
+						</div>
+						<div class="footer_social">
+							<a href="https://www.linkedin.com/in/jacob-whitehead-developer/" target="_blank"><i class="fa fa-linkedin"></i></a>
+							<a href="https://github.com/Jwhitehead-drft" target="_blank"><i class="fa fa-github"></i></a>
+							<a href="mailto:jakeresides@gmail.com" target="_blank"><i class="fa fa-mail-reply"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--================End Footer Area =================-->
+
+	<script src="js/bootstrap.min.js"></script>
+	
+</body>
+
 </html>
